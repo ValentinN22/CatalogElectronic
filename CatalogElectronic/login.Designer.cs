@@ -39,8 +39,8 @@
             this.Profesor = new System.Windows.Forms.RadioButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btn_Exit = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -173,10 +173,6 @@
             this.panel1.Size = new System.Drawing.Size(46, 44);
             this.panel1.TabIndex = 8;
             // 
-            // timer1
-            // 
-            this.timer1.Interval = 500;
-            // 
             // btn_Exit
             // 
             this.btn_Exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -189,6 +185,10 @@
             this.btn_Exit.TabIndex = 4;
             this.btn_Exit.UseVisualStyleBackColor = true;
             this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 500;
             // 
             // login
             // 

@@ -57,10 +57,11 @@
             // 
             // Back
             // 
+            this.Back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Back.BackgroundImage = global::CatalogElectronic.Properties.Resources.addBack_btn;
             this.Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Back.Location = new System.Drawing.Point(12, 12);
+            this.Back.Location = new System.Drawing.Point(1172, 12);
             this.Back.Name = "Back";
             this.Back.Size = new System.Drawing.Size(45, 44);
             this.Back.TabIndex = 6;
