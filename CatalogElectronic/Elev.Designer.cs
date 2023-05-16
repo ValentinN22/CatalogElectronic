@@ -30,11 +30,14 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Medie = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.ArtePlastice = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.Religie = new System.Windows.Forms.Button();
             this.Logica = new System.Windows.Forms.Button();
             this.StiinteSocioUmane = new System.Windows.Forms.Button();
@@ -50,15 +53,12 @@
             this.Informatica = new System.Windows.Forms.Button();
             this.Matematica = new System.Windows.Forms.Button();
             this.btn_Exit = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -105,33 +105,42 @@
             this.panel2.TabIndex = 22;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // label2
+            // panel4
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(69)))), ((int)(((byte)(68)))));
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 15F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(671, 61);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(179, 28);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Materie Selectata";
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.dataGridView2);
+            this.panel4.Location = new System.Drawing.Point(506, 12);
+            this.panel4.Name = "panel4";
+            this.panel4.Padding = new System.Windows.Forms.Padding(1);
+            this.panel4.Size = new System.Drawing.Size(186, 404);
+            this.panel4.TabIndex = 5;
             // 
-            // label1
+            // dataGridView2
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(69)))), ((int)(((byte)(68)))));
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 15F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(472, 61);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 28);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Materie Selectata :";
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(69)))), ((int)(((byte)(68)))));
+            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView2.Enabled = false;
+            this.dataGridView2.GridColor = System.Drawing.Color.White;
+            this.dataGridView2.Location = new System.Drawing.Point(1, 1);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.RowHeadersVisible = false;
+            this.dataGridView2.Size = new System.Drawing.Size(184, 402);
+            this.dataGridView2.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.dataGridView1);
+            this.panel3.Location = new System.Drawing.Point(196, 12);
+            this.panel3.Name = "panel3";
+            this.panel3.Padding = new System.Windows.Forms.Padding(1);
+            this.panel3.Size = new System.Drawing.Size(304, 404);
+            this.panel3.TabIndex = 4;
             // 
             // dataGridView1
             // 
@@ -160,9 +169,23 @@
             this.Medie.Name = "Medie";
             this.Medie.Size = new System.Drawing.Size(105, 37);
             this.Medie.TabIndex = 21;
-            this.Medie.Text = "Medie anuala";
+            this.Medie.Text = "Optional";
             this.Medie.UseVisualStyleBackColor = false;
             this.Medie.Click += new System.EventHandler(this.Medie_Click);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(69)))), ((int)(((byte)(68)))));
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 15F);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(671, 61);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(179, 28);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Materie Selectata";
             // 
             // ArtePlastice
             // 
@@ -177,6 +200,20 @@
             this.ArtePlastice.Text = "Arte Plastice";
             this.ArtePlastice.UseVisualStyleBackColor = false;
             this.ArtePlastice.Click += new System.EventHandler(this.ArtePlastice_Click);
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(69)))), ((int)(((byte)(68)))));
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 15F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(472, 61);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(191, 28);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Materie Selectata :";
             // 
             // Religie
             // 
@@ -202,7 +239,7 @@
             this.Logica.Name = "Logica";
             this.Logica.Size = new System.Drawing.Size(105, 37);
             this.Logica.TabIndex = 18;
-            this.Logica.Text = "Logica/Optional";
+            this.Logica.Text = "Logica";
             this.Logica.UseVisualStyleBackColor = false;
             this.Logica.Click += new System.EventHandler(this.Logica_Click);
             // 
@@ -388,43 +425,6 @@
             this.btn_Exit.UseVisualStyleBackColor = true;
             this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Location = new System.Drawing.Point(196, 12);
-            this.panel3.Name = "panel3";
-            this.panel3.Padding = new System.Windows.Forms.Padding(1);
-            this.panel3.Size = new System.Drawing.Size(304, 404);
-            this.panel3.TabIndex = 4;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.dataGridView2);
-            this.panel4.Location = new System.Drawing.Point(506, 12);
-            this.panel4.Name = "panel4";
-            this.panel4.Padding = new System.Windows.Forms.Padding(1);
-            this.panel4.Size = new System.Drawing.Size(186, 404);
-            this.panel4.TabIndex = 5;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(69)))), ((int)(((byte)(68)))));
-            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Enabled = false;
-            this.dataGridView2.GridColor = System.Drawing.Color.White;
-            this.dataGridView2.Location = new System.Drawing.Point(1, 1);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.RowHeadersVisible = false;
-            this.dataGridView2.Size = new System.Drawing.Size(184, 402);
-            this.dataGridView2.TabIndex = 0;
-            // 
             // Elev
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -443,10 +443,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }

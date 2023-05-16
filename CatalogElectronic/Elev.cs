@@ -198,14 +198,14 @@ namespace CatalogElectronic
         private void StiinteSocioUmane_Click(object sender, EventArgs e)
         {
             label2.Text = "Stiinte Socio-Umane";
-            AddNote(21, dataGridView1);
-            AddAbsente(21, dataGridView2);
+            AddNote(24, dataGridView1);
+            AddAbsente(24, dataGridView2);
 
         }
 
         private void Logica_Click(object sender, EventArgs e)
         {
-            label2.Text = "Logica / Optional";
+            label2.Text = "Logica";
             AddNote(23, dataGridView1);
             AddAbsente(23, dataGridView2);
         }
@@ -226,7 +226,9 @@ namespace CatalogElectronic
 
         private void Medie_Click(object sender, EventArgs e)
         {
-
+            label2.Text = "Optional";
+            AddNote(29,dataGridView1);
+            AddAbsente(29,dataGridView2);
         }
     }
 }
