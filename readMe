@@ -1,0 +1,11 @@
+Resurse necesare pentru rularea aplicatiei:
+  - .NET Framework 4.7.2
+  - SQL Server LocalDb 2019
+
+Date de autentificare in aplicatie:
+    - cont profesor:
+          - username: AdminMAT
+          - parola: admin
+    - cont elev:
+          - username: Ovidiu Munteanu
+          - parola: elev
